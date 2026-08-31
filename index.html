@@ -23,8 +23,10 @@
     body.final-theme { background: linear-gradient(135deg, #ff758f 0%, #ff4d6d 50%, #c9184a 100%) !important; }
     .section-view { position: absolute; width: 100vw; height: 100vh; display: none; justify-content: center; align-items: center; }
     .section-view.active { display: flex; }
+
     .btn-next-stage {
-      position: absolute; bottom: 30px; padding: 12px 28px; font-size: 1rem; font-weight: bold;
+      position: absolute; bottom: 170px; padding: 12px 28px; font-size: 1rem; font-weight: bold;
+
       background: linear-gradient(45deg, #fc48ff, #ff758f); color: white; border: none;
       border-radius: 25px; cursor: pointer; box-shadow: 0 5px 15px rgba(255, 77, 77, 0.4);
       z-index: 1000; transition: transform 0.2s, box-shadow 0.2s;
@@ -52,7 +54,8 @@
     .layer-1 { background: radial-gradient(circle at 50% 20%, #ff2a5f 0%, #a4133c 60%, #42000f 100%); }
     .layer-2 { background: radial-gradient(circle at 50% 20%, #e60039 0%, #800f2f 60%, #2b000a 100%); }
     .layer-3 { background: radial-gradient(circle at 50% 20%, #cc0033 0%, #590d22 100%, #170004 100%); }
-    .message-container-s1 { position: absolute; bottom: 12%; text-align: center; opacity: 0; transition: opacity 1.5s ease 3.2s; }
+    
+    .message-container-s1 { position: absolute; bottom: 17%; text-align: center; opacity: 0; transition: opacity 1.5s ease 3.2s; }
     .message-container-s1 p { font-size: 1.25rem; font-style: italic; color: #ffb3c1; letter-spacing: 1px; font-family: 'Georgia', serif; }
 
     /* SECCIÓN 2 */
@@ -309,7 +312,7 @@
     }
 
     function drawBouquet() {
-      let centerX = width / 2; let centerY = height / 2 + 90;
+      let centerX = width / 2; let centerY = height / 2 + 20;
       ctx.save(); ctx.translate(centerX, centerY);
       let sway = Math.sin(time * 1.5) * 0.015;
       if (paperProgress > 0) {
